@@ -3,7 +3,7 @@ particlesJS('particles-js',
     {
         "particles": {
             "number": {
-                "value": 60,
+                "value": 40,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -56,7 +56,7 @@ particlesJS('particles-js',
             },
             "move": {
                 "enable": true,
-                "speed": 4,
+                "speed": 3,
                 "direction": "none",
                 "random": false,
                 "straight": false,
