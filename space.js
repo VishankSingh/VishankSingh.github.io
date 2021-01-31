@@ -52,7 +52,7 @@ function animate() {
 	    p.y -= p.velocity;
 	                
 	    if (p.y < -150) {
-	    	p.y = 200;
+	    	p.y = 150;
 	    	p.velocity = 0;
 	    }
 	});
