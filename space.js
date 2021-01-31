@@ -51,7 +51,7 @@ function animate() {
 	    p.velocity += p.acceleration
 	    p.y -= p.velocity;
 	                
-	    if (p.y < -200) {
+	    if (p.y < -150) {
 	    	p.y = 200;
 	    	p.velocity = 0;
 	    }
