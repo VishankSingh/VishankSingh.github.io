@@ -1,0 +1,62 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+
+#main {
+    position: absolute;
+    line-height-step: 2%;
+}
+
+#title {
+    position: absolute;
+    color: #d8d8d8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 5vw;
+}
+
+#one {
+    font-size: 10vw;
+    font-weight: 200;
+    margin-bottom: -2vw;
+}
+
+#two {
+    font-size: 4vw;
+    font-weight: 200;
+    margin-bottom: -2vw;
+}
+
+#three {
+    font-size: 4vw;
+    font-weight: 200;
+}
+
+@media only screen and (orientation: portrait) {
+    #title {
+        left: 7vw;
+    }
+
+    #one {
+        font-size: 30vw;
+    }
+
+    #two {
+        font-size: 10vw;
+        margin-bottom: 2vw;
+    }
+
+    #three {
+        font-size: 10vw;
+    }
+}
+
+
+
+
+

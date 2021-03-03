@@ -1,0 +1,63 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #D8D8D8;
+}
+
+#main {
+    position: fixed;
+    z-index: -33;
+    height: 00;
+}
+
+#text {
+    z-index: 99;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+
+    width: 80vw;
+    left: 10vw;
+    top: 45%;
+
+    font-size: 1.7vw;
+
+    
+}
+
+#social {
+    z-index: 99;
+    position: absolute;
+    color: #D8D8D8;
+    top: 55%;
+    left: 10vw;
+    right: 10vw;
+    width: 80vw;
+
+    display: flex;
+    justify-content: center;
+
+    font-size:2.2vw;
+    letter-spacing: 2vw;
+    
+}
+
+
+@media only screen and (orientation: portrait){
+    #text {
+        top: 40%;
+        font-size: 4.5vw;
+    }
+
+    #social {
+        top: 50%;
+        font-size: 4vh;
+        letter-spacing: 4vh;
+    }
+}
+
+
