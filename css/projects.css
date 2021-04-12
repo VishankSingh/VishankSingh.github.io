@@ -1,0 +1,78 @@
+
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#main {
+    position: fixed;
+    z-index: -33;
+    height: 00;
+}
+
+.boxes {
+    position: absolute;
+    padding-top: 10vh;
+    margin-bottom: 2vh;
+    color: #D8D8D8;
+}
+
+.box {
+    background-color: #2020207a;
+  
+    padding: 2vw 2vw 2vw 2vw;
+
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+    width: 80vw;
+    font-weight: 300;
+}
+
+.title {
+    color: #9664FF;
+    margin-bottom: 0.5vh;
+    font-size: 2vw;
+}
+
+.description {
+    margin-bottom: 2.7vh;
+    font-size: 1.2vw;
+}
+
+.link {
+    color: #9664FF;
+    font-size: 1.2vw;
+}
+
+@media only screen and (orientation: portrait){
+    .box {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        margin-left: 8vw;
+        margin-right: 8vw;
+
+        padding: 2vh;
+    }
+
+    .title {
+        font-size: 3.5vh;
+    }
+    
+    .description {
+        font-size: 1.8vh;
+        margin-bottom: 3vh;
+    }
+
+    .link {
+        font-size: 2vh;
+    }
+
+
+}
