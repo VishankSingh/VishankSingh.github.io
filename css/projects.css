@@ -43,10 +43,12 @@ body {
 
 .description {
     margin-bottom: 2.7vh;
+    font-size: 1.2vw;
 }
 
 .link {
     color: #9664FF;
+    font-size: 1.2vw;
 }
 
 @media only screen and (orientation: portrait){
