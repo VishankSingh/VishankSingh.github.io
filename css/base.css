@@ -103,11 +103,11 @@ nav {
 }
 
 .toggle .line1{
-    transform: rotate(-45deg) translate(-0.8vh, 1.2vw);
+    transform: rotate(-45deg) translate(-0.439339vh, 1.06066vh);
 }
 .toggle .line2{
     opacity: 0;
 }
 .toggle .line3{
-    transform: rotate(45deg) translate(-0.8vh, -1.2vw);
+    transform: rotate(45deg) translate(-0.439339vh, -1.06066vh);
 }
