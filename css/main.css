@@ -1,0 +1,24 @@
+#main {
+  overflow-y: scroll !important;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+
+
+.note {
+  position: absolute;
+  top: 30vh;
+  left: 5vw;
+  right: 5vw;
+
+}
+
