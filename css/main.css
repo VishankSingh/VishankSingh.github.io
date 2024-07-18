@@ -19,6 +19,18 @@
   top: 30vh;
   left: 5vw;
   right: 5vw;
-
+  font-size: 1vw;
 }
 
+
+
+@media screen and (max-width: 992px) {
+  .note {
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+    right: 5vw;
+    font-size: 3.2vw;
+  }
+
+}
