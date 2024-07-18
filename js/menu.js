@@ -23,7 +23,7 @@ function revealMenuItems() {
     height: "100vh",
   });
 
-  tl.to(".col-1", 1, {
+  tl.to(".col-1", 0.7, {
     left: "-100%",
     ease: "expo.inOut",
   });
@@ -40,12 +40,12 @@ function revealMenuItems() {
 
   tl.to(
     ".col-2 > .menu-item",
-    1,
+    0.7,
     {
       left: 0,
       ease: "expo.inOut",
       stagger: {
-        amount: 0.25,
+        amount: 0.3,
       },
     },
     "<"

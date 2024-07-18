@@ -1,5 +1,6 @@
 .menu-container {
     position: fixed;
+    z-index: 9999;
     top: 1rem;
     right: 1rem;
     width: 13vw;
@@ -9,7 +10,7 @@
 
 .menu-container .col {
     position: absolute;
-    width: 13vw;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -18,24 +19,25 @@
 }
 
 .menu-container .col:nth-child(2) {
-    left: 13vw;
+    left: 100%;
 }
 
 .menu-container .col .menu-item {
-    background: #000000;
-    color: #ffffff;
-    border: solid 2px black;
-    margin: 1%;
+    background: #ffffff; /*#b91668*/ /*69001c*/ /*0f3bbe*/ /**/ /**/
+    color: #000000;
+    border: solid 2px rgb(255, 255, 255);
+    margin-top: 1.2%;
     padding: 5%;
     font-size: 0.8vw;
     display: flex;
     align-items: center;
     justify-content: start;
+    width: 98%;
 }
 
 .menu-container .col-2 .menu-item {
     position: relative;
-    left: 13vw;
+    left: 100%;
 }
 
 @media screen and (max-width: 992px) {

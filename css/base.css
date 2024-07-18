@@ -1,17 +1,27 @@
 
 :root {
-    --bg: #dadada; /*#ddc0ff*/ /*#ffd6f0*/ /*#ffdda6*/ /*#ff005d*/ /*#ffbcbc*/ /*989898*/
+    --bg: #000000; /*#f4f4f4*/ /*#ccc6e8*/ /*#ffdda6*/ /*#ff005d*/ /*#ffbcbc*/ /*989898*/ /*b3b3da*/
     --accent: rgb(255, 255, 255);
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: "IBM Plex Mono", monospace;
     font-style: normal;
     font-weight: 400;
     box-sizing: border-box;
     outline: 0px red solid;
+}
+
+::selection {
+    background-color: #8400ff; 
+    color: #ffffff;           
+}
+  
+::-moz-selection {
+    background-color: #b4b4b4; 
+    color: #000000;          
 }
 
 html, body {
@@ -19,6 +29,6 @@ html, body {
 }
 
 a {
-    text-decoration: none ;
+    text-decoration: none;
     color: inherit ;
 }

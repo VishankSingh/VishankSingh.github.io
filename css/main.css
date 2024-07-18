@@ -20,6 +20,8 @@
   left: 5vw;
   right: 5vw;
   font-size: 1vw;
+  width: 60vw;
+  color: #ffffff;
 }
 
 
@@ -30,6 +32,7 @@
     top: 30vh;
     left: 5vw;
     right: 5vw;
+    width: auto;
     font-size: 3.2vw;
   }
 
