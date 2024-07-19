@@ -20,7 +20,7 @@ revealMenu();
 
 function revealMenuItems() {
   tl.to(".menu-container", 0.01, {
-    height: "100vh",
+    height: "28vh",
   });
 
   tl.to(".col-1", 0.7, {

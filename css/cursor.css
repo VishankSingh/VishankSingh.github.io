@@ -1,0 +1,16 @@
+#cursor {
+    position: fixed;
+    z-index: 9999;
+    opacity: 0.1;
+    transition: opacity 100ms ease;
+    background-color: #ffffff;
+    mix-blend-mode: exclusion;
+    height: 0.4vw;
+    width: 0.4vw;
+    transition: opacity 100ms ease;
+    pointer-events: none;
+}
+
+body:hover > #cursor {
+    opacity: 1;
+}

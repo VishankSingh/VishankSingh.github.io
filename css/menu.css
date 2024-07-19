@@ -1,17 +1,16 @@
 .menu-container {
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     top: 1rem;
     right: 1rem;
     width: 13vw;
-    height: 100vh;
+    height: 6vh;
     overflow: hidden;
 }
 
 .menu-container .col {
     position: absolute;
     width: 100%;
-    cursor: pointer;
 }
 
 .menu-container .col:nth-child(1) {
@@ -33,6 +32,7 @@
     align-items: center;
     justify-content: start;
     width: 100%;
+    height: 5vh;
 }
 
 .menu-container .col-2 .menu-item {
@@ -45,7 +45,7 @@
         top: 1rem;
         right: 1rem;
         width: 50vw;
-        height: 100vh;
+        height: 6vh;
     }
 
     .menu-container .col {
