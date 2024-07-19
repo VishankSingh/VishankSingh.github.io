@@ -25,7 +25,7 @@ function revealMenuItems() {
 
   tl.to(".col-1", 0.7, {
     left: "-100%",
-    ease: "expo.inOut",
+    ease: "power4.inOut",
   });
 
   tl.to(
@@ -33,7 +33,7 @@ function revealMenuItems() {
     0.025,
     {
       left: "0px",
-      ease: "expo.inOut",
+      ease: "power4.inOut",
     },
     "<"
   );
@@ -43,7 +43,7 @@ function revealMenuItems() {
     0.7,
     {
       left: 0,
-      ease: "expo.inOut",
+      ease: "power4.inOut",
       stagger: {
         amount: 0.3,
       },

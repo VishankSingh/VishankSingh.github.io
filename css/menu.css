@@ -23,16 +23,16 @@
 }
 
 .menu-container .col .menu-item {
-    background: #ffffff; /*#b91668*/ /*69001c*/ /*0f3bbe*/ /**/ /**/
-    color: #000000;
-    border: solid 2px rgb(255, 255, 255);
+    background: var(--secondary); /*#b91668*/ /*69001c*/ /*0f3bbe*/ /**/ /**/
+    color: var(--primary);
+    border: solid 0px rgb(0, 0, 0);
     margin-top: 1.2%;
     padding: 5%;
     font-size: 0.8vw;
     display: flex;
     align-items: center;
     justify-content: start;
-    width: 98%;
+    width: 100%;
 }
 
 .menu-container .col-2 .menu-item {
