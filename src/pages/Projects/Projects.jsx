@@ -4,6 +4,7 @@ import Cursor from '../../components/cursor/Cursor.jsx';
 import {useEffect} from 'react';
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
+import pic from './pixil-frame-0(4).png';
 
 function Blog() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function Blog() {
     <>
       <Menu/>
       <Cursor/>
+      <img src={pic} alt="projects" width="1%"/>
 
     </>
   )
