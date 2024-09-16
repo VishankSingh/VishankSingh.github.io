@@ -1,0 +1,16 @@
+.twocont {
+    position: fixed;
+    font-family: monospace;
+    font-size: 1vw;
+    right: 2vw;
+    top: 3vh;
+}
+
+.menu-links:hover{
+    color: #000000;
+}
+
+
+@media screen and (max-width: 992px) {
+
+}

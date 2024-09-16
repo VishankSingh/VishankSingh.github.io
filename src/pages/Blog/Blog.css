@@ -1,0 +1,33 @@
+.cont {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    margin: 5vh 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    color: --light-green;
+}
+
+.post-cont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 1vw;
+}
+
+.title {
+    font-family: Roboto;
+    font-size: 1.5vw;
+}
+
+.desc {
+    font-family: "Roboto", sans-serif;
+}
+
+.date {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.7vw;
+}
