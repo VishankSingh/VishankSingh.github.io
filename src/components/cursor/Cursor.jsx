@@ -93,7 +93,6 @@ function Cursor() {
       <div id='cursor'></div>
       <div id='cursor-text-cont'>
         <div className='cursor-text'>
-          CLICK
         </div>
       </div>
     </>

@@ -1,6 +1,4 @@
 import './Menu.css';
-import gsap from 'gsap';
-import {useGSAP} from '@gsap/react';
 import {Link} from 'react-router-dom';
 
 function Menu() {
@@ -11,9 +9,6 @@ function Menu() {
           <span className='menu-links'>HOME</span>
         </Link>
         &nbsp;/&nbsp;
-        <Link to='/feed' href='/feed' className='for-cursor-dialog' data='FEED?'>
-          <span className='menu-links'>FEED</span>
-        </Link>&nbsp;/&nbsp;
         <Link to='/blog' href='/blog' className='for-cursor-dialog' data='RANDOM SHIT'>
           <span className='menu-links'>BLOG</span>
         </Link>&nbsp;/&nbsp;
