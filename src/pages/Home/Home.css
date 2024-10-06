@@ -1,63 +1,48 @@
-:root {
-    background-color: var(--dark-green);
-    color: var(--light-green);
-}
-
 .Home {
-    overflow: hidden;
+    position: relative;
     width: 100vw;
     height: 100vh;
-
+    top: 0;
+    left: 0;
+    background-color: var(--dark-color);
+    overflow: hidden;
 }
 
-.note {
-    position: absolute;
+.noteo {
+    position: relative;
     top: 3vh;
     left: 2vw;
     font-family: monospace;
-    font-size: 1vw;
-    width: 60vw;
-}
-
-.vis {
-    position: absolute;
-    font-family: "Press Start 2P", system-ui;
-    font-size: 10vw;
-    font-weight: 100;
-    bottom: -0%;
-    margin-left: 2vw;
-    color: var(--light-green); /*91ff79*/
-}
-
-.xkcd-cont {
-    position: absolute;
-    bottom: 10vh;
-    left: 5vw;
-    background-color: var(--light-green);
-    padding: 0.3vw 0.8vw;
-    color: var(--dark-green);
-    font-family: Roboto, sans-serif;
     font-size: 0.8vw;
+    width: 60vw;
+    height: auto;
+    color: var(--light-color);
+    z-index: 3;
 }
 
-.socials {
+
+.bottom-bar {
     position: absolute;
-    bottom: 2vw;
-    right: 2vw;
-
-    font-family: monospace;
-    font-size: 1vw;
+    width: 100vw;
+    height: 23vh;
+    padding: 1vw;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-color);
 }
 
+.note {
+    font-size: 0.8vw;
+    font-family: monospace;
+}
 
-@media screen and (max-width: 992px) {
-    .note {
-        position: absolute;
-        top: 30vh;
-        left: 5vw;
-        right: 5vw;
-        width: auto;
-        font-size: 3.2vw;
-    }
-
+.name {
+    font-family: DotGothic16, sans-serif;
+    font-size: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }

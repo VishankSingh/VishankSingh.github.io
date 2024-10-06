@@ -4,3 +4,61 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+/*--------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'Array-Wide';
+    src: url('/src/fonts/Array_Complete/Array-Wide.woff2') format('woff2'),
+    url('/src/fonts/Array_Complete/Array-Wide.woff') format('woff'),
+    url('/src/fonts/Array_Complete/Array-Wide.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Array-Regular';
+    src: url('/src/fonts/Array_Complete/Array-Regular.woff2') format('woff2'),
+    url('/src/fonts/Array_Complete/Array-Regular.woff') format('woff'),
+    url('/src/fonts/Array_Complete/Array-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Array-Semibold';
+    src: url('/src/fonts/Array_Complete/Array-Semibold.woff2') format('woff2'),
+    url('/src/fonts/Array_Complete/Array-Semibold.woff') format('woff'),
+    url('/src/fonts/Array_Complete/Array-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Array-SemiboldWide';
+    src: url('/src/fonts/Array_Complete/Array-SemiboldWide.woff2') format('woff2'),
+    url('/src/fonts/Array_Complete/Array-SemiboldWide.woff') format('woff'),
+    url('/src/fonts/Array_Complete/Array-SemiboldWide.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Array-Bold';
+    src: url('/src/fonts/Array_Complete/Array-Bold.woff2') format('woff2'),
+    url('/src/fonts/Array_Complete/Array-Bold.woff') format('woff'),
+    url('/src/fonts/Array_Complete/Array-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Array-BoldWide';
+    src: url('/src/fonts/Array_Complete/Array-BoldWide.woff2') format('woff2'),
+    url('/src/fonts/Array_Complete/Array-BoldWide.woff') format('woff'),
+    url('/src/fonts/Array_Complete/Array-BoldWide.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+

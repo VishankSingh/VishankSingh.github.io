@@ -1,14 +1,27 @@
 :root {
-    --light-green: #0043ff;
-    --dark-green: #efddff;
+    --light-color: #e10000;
+    --dark-color: #590000;
     /*
-    --light-green: #38c83f;
-    --dark-green: #0b562a;
+    --light-color: #38c83f;
+    --dark-color: #0b562a;
     */
     /*
-    --light-green: #0043ff;
-    --dark-green: #efddff;
+    --light-color: #0043ff;
+    --dark-color: #efddff;
     */
+    /*
+    --light-color: #ffbae0;
+    --dark-color: #191970;
+    */
+    /*
+    --light-color: #32bc81;
+    --dark-color: #203d3f;
+    */
+    /*
+    --light-color: #32bc81;
+    --dark-color: #203d3f;
+    */
+
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -42,41 +55,10 @@
 }
 
 body {
-    overflow-x: hidden;
-    background-color: var(--dark-green);
+    background: var(--dark-color);
 }
 
-html.lenis,
-html.lenis body {
-    height: auto;
-}
 
-.lenis.lenis-smooth {
-    scroll-behavior: auto !important;
-}
-
-.lenis.lenis-smooth [data-lenis-prevent] {
-    overscroll-behavior: contain;
-}
-
-.lenis.lenis-stopped {
-    overflow: hidden;
-}
-
-.block {
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #98ffa2;
-}
-
-#root {
-    height: auto;
-    width: 100vw;
-}
 
 a {
     color: inherit;
@@ -107,6 +89,8 @@ a {
 .underline-white {
     border-bottom: white solid 1px;
 }
+
+
 
 @media screen and (max-width: 992px) {
     .mobile-hide {

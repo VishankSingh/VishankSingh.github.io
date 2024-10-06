@@ -4,24 +4,7 @@ import gsap from 'gsap';
 import {useGSAP} from '@gsap/react';
 
 function Cursor() {
-  useEffect(() => {
-    function handleStart(e) {
-      const cursor_text_cont = document.getElementById('cursor-text-cont');
-        const x = e.clientX - cursor_text_cont.offsetWidth / 2;
-        const y = e.clientY + cursor_text_cont.offsetHeight;
-        cursor_text_cont.style.left = x + 'px';
-        cursor_text_cont.style.top = y + 'px';
-      const cursor = document.getElementById('cursor');
-        const cursor_x = e.clientX - cursor.offsetHeight / 2;
-        const cursor_y = e.clientY - cursor.offsetWidth / 2;
-        cursor.style.left = cursor_x + 'px';
-        cursor.style.top = cursor_y + 'px';
-    }
-    document.addEventListener('DOMContentLoaded', handleStart);
-    return () => {
-      document.removeEventListener('DOMContentLoaded', handleStart);
-    }
-  }, []);
+
 
 
   useEffect(() => {
@@ -42,6 +25,8 @@ function Cursor() {
       document.removeEventListener('mousemove', handleCursor);
     }
   })
+
+
 
   useEffect(() => {
     const cursor = document.getElementById('cursor');

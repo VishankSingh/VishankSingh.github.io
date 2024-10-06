@@ -1,49 +1,77 @@
-import './Home.css'
-import Menu from '../../components/menu/Menu.jsx'
+import './Home.css';
+import Menu from '../../components/menu/Menu.jsx';
 import Cursor from '../../components/cursor/Cursor.jsx';
-import {useEffect, useState} from 'react';
-import {useGSAP} from '@gsap/react';
-import gsap from 'gsap';
-import {Link} from 'react-router-dom';
+import {useEffect} from 'react';
 
 function Home() {
   useEffect(() => {
-    document.title = 'Home'
+    document.title = 'Home';
   }, []);
 
-  useGSAP(() => {
-      gsap.to(".block", {
-        duration: 0.4,
-        left: "100vw",
-        ease: 'power3.inOut',
-      })
-
-  })
 
   return (
-    <div className="Home">
+    <>
       <Menu/>
       <Cursor/>
-      <div className='note'>
-        [NOTE] This website is incomplete (obviously +_+). Not much right now, but I
-        will keep adding stuff. I was planning this website since a year, but was
-        delayed due to some reasons(
-        <span style={{textDecoration: 'line-through'}}>procrastination</span>).
-        You might see some personal projects, random quotes, posters or links to
-        websites (or other s**t as well) which piqued my interest. I might blog (or
-        not, idk). Writing is not really my thing (you can guess).
-        &nbsp;<span>(╯°□°)╯︵ ┻━┻</span> &nbsp;<br/>
+      <div className='Home'>
+        <div className='noteo'>
+          [NOTE] This website is incomplete (obviously +_+). Not much right now, but I
+          will keep adding stuff. I was planning this website since a year, but was
+          delayed due to some reasons(
+          <span style={{textDecoration: 'line-through'}}>procrastination</span>).
+          You might see some personal projects, random quotes, posters or links to
+          websites (or other s**t as well) which piqued my interest. <span style={{textDecoration: 'line-through'}}>I might blog (or
+          not, idk).</span> I blog. Writing is not really my thing (you can guess).
+        </div>
+
+        <div className='bottom-bar'>
+          <div className='note'>
+            <pre style={{ fontFamily: 'monospace', whiteSpace: 'pre-wrap', lineHeight: '1.0em' }}>
+{`
+                       .
+                       M
+                      dM
+                      MMr
+                     4MMML                  .
+                     MMMMM.                xf
+     .              "MMMMM               .MM-
+      Mh..          +MMMMMM            .MMMM
+      .MMM.         .MMMMML.          MMMMMh
+       )MMMh.        MMMMMM         MMMMMMM
+        3MMMMx.     'MMMMMMf      xnMMMMMM"
+        '*MMMMM      MMMMMM.     nMMMMMMP"
+          *MMMMMx    "MMMMM\\    .MMMMMMM=
+           *MMMMMh   "MMMMM"   JMMMMMMP
+             MMMMMM   3MMMM.  dMMMMMM            .
+              MMMMMM  "MMMM  .MMMMM(        .nnMP"
+  =..          *MMMMx  MMM"  dMMMM"    .nnMMMMM*
+    "MMn...     'MMMMr 'MM   MMM"   .nMMMMMMM*"
+     "4MMMMnn..   *MMM  MM  MMP"  .dMMMMMMM""
+       ^MMMMMMMMx.  *ML "M .M*  .MMMMMM**"
+          *PMMMMMMhn. *x > M  .MMMM**""
+             ""**MMMMhx/.h/ .=*"
+                      .3P"%....
+                    nP"     "*MMnx
+                    
+                    
+                    
+                    
+                    
+                    
+`}
+    </pre>
+          </div>
+          <div className='name'>
+            <div>
+             fdfsdfa
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div className='vis'>SUP</div>
-      <div className='socials'>
-        <a href='https://github.com/VishankSingh' target='_blank'>
-          <span></span>
-        </a>
-      </div>
-    </div>
-
-  )
+    </>
+  );
 }
 
-export default Home
+export default Home;

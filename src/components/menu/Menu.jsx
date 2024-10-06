@@ -5,16 +5,40 @@ function Menu() {
   return (
     <>
       <nav className='twocont'>
-        <Link to='/' href='/' className='for-cursor-dialog' data='HOME'>
-          <span className='menu-links'>HOME</span>
-        </Link>
-        &nbsp;/&nbsp;
-        <Link to='/blog' href='/blog' className='for-cursor-dialog' data='RANDOM SHIT'>
-          <span className='menu-links'>BLOG</span>
-        </Link>&nbsp;/&nbsp;
-        <Link to='/projects' href='/projects' className='for-cursor-dialog' data='PROJECTS #_#'>
-          <span className='menu-links'>PROJECTS?</span>
-        </Link>
+        <div className='link-cont'>
+          <Link to='/' href='/' className='' data='HOME'>
+            <div className='link-overlay'></div>
+            <div className='link-div'>
+              Home
+            </div>
+          </Link>
+        </div>
+        <div className='link-cont'>
+          <Link to='/blog' href='/blog' className='' data='RANDOM SHIT'>
+            <div className='link-overlay'></div>
+            <div className='link-div'>
+              Blog
+            </div>
+          </Link>
+        </div>
+        <div className='link-cont'>
+          <Link to='/projects' href='/projects' className='' data='PROJECTS #_#'>
+            <div className='link-overlay'></div>
+            <div className='link-div'>
+              Projects
+            </div>
+          </Link>
+        </div>
+        <div className='link-cont'>
+          <Link to='/' href='/random' className='' data='PROJECTS #_#'>
+            <div className='link-overlay'></div>
+            <div className='link-div'>
+              Random
+            </div>
+          </Link>
+        </div>
+
+
       </nav>
     </>
   );
