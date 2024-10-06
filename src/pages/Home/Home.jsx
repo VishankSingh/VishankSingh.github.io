@@ -21,7 +21,8 @@ function Home() {
           <span style={{textDecoration: 'line-through'}}>procrastination</span>).
           You might see some personal projects, random quotes, posters or links to
           websites (or other s**t as well) which piqued my interest. <span style={{textDecoration: 'line-through'}}>I might blog (or
-          not, idk).</span> I blog. Writing is not really my thing (you can guess).
+          not, idk).</span> I blog. Writing is not really my thing (you can guess).<br/>
+          There&apos;s some weed at the bottom left and some random text at bottom right (suggestions for the same are welcome).
         </div>
 
         <div className='bottom-bar'>
