@@ -9,7 +9,7 @@ function Menu() {
           <Link to='/' href='/' className='' data='HOME'>
             <div className='link-overlay'></div>
             <div className='link-div'>
-              Home
+              HOME
             </div>
           </Link>
         </div>
@@ -17,7 +17,7 @@ function Menu() {
           <Link to='/blog' href='/blog' className='' data='RANDOM SHIT'>
             <div className='link-overlay'></div>
             <div className='link-div'>
-              Blog
+              BLOG
             </div>
           </Link>
         </div>
@@ -25,7 +25,7 @@ function Menu() {
           <Link to='/projects' href='/projects' className='' data='PROJECTS #_#'>
             <div className='link-overlay'></div>
             <div className='link-div'>
-              Projects
+              PROJECTS
             </div>
           </Link>
         </div>
@@ -33,7 +33,7 @@ function Menu() {
           <Link to='/' href='/random' className='' data='PROJECTS #_#'>
             <div className='link-overlay'></div>
             <div className='link-div'>
-              Random
+              RANDOM
             </div>
           </Link>
         </div>

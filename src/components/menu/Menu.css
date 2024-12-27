@@ -5,23 +5,23 @@
     font-size: 1vw;
     right: 2vw;
     top: 3vh;
-    width: 24vw;
+    width: 28vw;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background-color: var(--dark-color);
 }
 
 .link-cont {
-    width: 12vw;
     height: 1.5vw;
     position: relative;
 }
 
 .link-div {
-    position: absolute;
     width: 100%;
     height: 100%;
     padding-left: 0.3vw;
+    padding-right: 0.3vw;
     color: var(--light-color);
 }
 

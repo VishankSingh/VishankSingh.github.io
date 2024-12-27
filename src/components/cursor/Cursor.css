@@ -3,7 +3,7 @@
     z-index: 1000;
     height: 0.4vw;
     width: 0.4vw;
-    border-radius: 50%;
+    border-radius: 0;
     background-color: #ffffff;
     mix-blend-mode: exclusion;
     pointer-events: none;

@@ -18,8 +18,8 @@
     --dark-color: #203d3f;
     */
     /*
-    --light-color: #32bc81;
-    --dark-color: #203d3f;
+    --light-color: #e10000;
+    --dark-color: #590000;
     */
 
 
@@ -34,10 +34,10 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    outline: red 0px solid;
+    outline: red 1px solid;
     padding: 0;
     scroll-behavior: smooth;
-    cursor: none;
+    /* cursor: none; */
 }
 
 ::selection {
@@ -86,8 +86,8 @@ a {
     color: mediumpurple;
 }
 
-.underline-white {
-    border-bottom: white solid 1px;
+.underline {
+    text-decoration: underline;
 }
 
 
@@ -104,6 +104,6 @@ a {
     }
 
     * {
-        cursor: none;
+        /* cursor: none; */
     }
 }

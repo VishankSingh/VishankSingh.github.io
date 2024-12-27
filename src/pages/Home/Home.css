@@ -8,9 +8,9 @@
     overflow: hidden;
 }
 
-.noteo {
+.home-note {
     position: relative;
-    top: 3vh;
+    top: 85vh;
     left: 2vw;
     font-family: monospace;
     font-size: 0.8vw;
@@ -33,16 +33,3 @@
     color: var(--light-color);
 }
 
-.note {
-    font-size: 0.8vw;
-    font-family: monospace;
-}
-
-.name {
-    font-family: DotGothic16, sans-serif;
-    font-size: 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-}
