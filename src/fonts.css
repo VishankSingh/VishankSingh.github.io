@@ -1,0 +1,236 @@
+/* ==========================================================================
+   PP Acma - Custom Display Font
+   ========================================================================== */
+
+@font-face {
+  font-family: 'PP Acma';
+  src: url('./assets/fonts/PPAcma/PPAcma-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Acma';
+  src: url('./assets/fonts/PPAcma/PPAcma-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Acma';
+  src: url('./assets/fonts/PPAcma/PPAcma-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Acma';
+  src: url('./assets/fonts/PPAcma/PPAcma-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Acma';
+  src: url('./assets/fonts/PPAcma/PPAcma-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Acma';
+  src: url('./assets/fonts/PPAcma/PPAcma-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Acma';
+  src: url('./assets/fonts/PPAcma/PPAcma-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Acma';
+  src: url('./assets/fonts/PPAcma/PPAcma-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* ==========================================================================
+   PP Neue Montreal - Custom Sans-Serif Font
+   ========================================================================== */
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-Hairline.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-HairlineItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Book weight mapped to regular 400 */
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontrealText-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontrealText-BookItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular mapped to medium 500 */
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-Italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-Extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./assets/fonts/PPNeueMontreal/PPNeueMontreal-ExtraboldItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* ==========================================================================
+   Global CSS Utility Classes
+   ========================================================================== */
+
+/* Font Family Classes */
+.font-acma {
+  font-family: 'PP Acma', serif;
+}
+
+.font-montreal {
+  font-family: 'PP Neue Montreal', sans-serif;
+}
+
+/* PP Acma Specific Utilities */
+.font-acma-thin {
+  font-family: 'PP Acma', serif;
+  font-weight: 100;
+}
+
+.font-acma-light {
+  font-family: 'PP Acma', serif;
+  font-weight: 300;
+}
+
+.font-acma-semibold {
+  font-family: 'PP Acma', serif;
+  font-weight: 600;
+}
+
+.font-acma-black {
+  font-family: 'PP Acma', serif;
+  font-weight: 900;
+}
+
+/* PP Neue Montreal Specific Utilities */
+.font-montreal-hairline {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 100;
+}
+
+.font-montreal-light {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 300;
+}
+
+.font-montreal-book {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 400;
+}
+
+.font-montreal-regular {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 500;
+}
+
+.font-montreal-semibold {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 600;
+}
+
+.font-montreal-extrabold {
+  font-family: 'PP Neue Montreal', sans-serif;
+  font-weight: 800;
+}

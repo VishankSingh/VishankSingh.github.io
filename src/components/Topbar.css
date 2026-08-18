@@ -1,0 +1,347 @@
+/* Top Bar Layout */
+.topbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid transparent;
+  background-color: transparent;
+  mix-blend-mode: difference;
+  transition: background-color var(--transition-normal), border-color var(--transition-normal);
+}
+
+/* Transparent style when menu is open */
+.topbar-header.menu-active {
+  background-color: transparent;
+}
+
+/* Container to center align topbar contents */
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 7vw;
+}
+
+/* Logo Styling */
+.topbar-logo a {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  transition: opacity var(--transition-fast);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.topbar-logo a:hover {
+  opacity: 0.8;
+}
+
+.logo-dot {
+  color: var(--color-primary);
+  margin-left: 2px;
+}
+
+/* Topbar Controls Container */
+.topbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+/* Menu Button Stylings */
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.25rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-xs);
+}
+
+.menu-text {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0em;
+  color: inherit;
+}
+
+/* Theme Switcher Dot Button */
+.theme-dot-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  transition: transform var(--transition-fast);
+}
+
+.theme-dot-btn:active {
+  transform: scale(0.9);
+}
+
+/* Theme Switcher Dot styling */
+.theme-dot {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-full);
+  background-color: #ffffff;
+  /* Automatically dark in light mode, light in dark mode */
+  transition: background-color var(--transition-normal);
+}
+
+/* Full Page Menu Overlay */
+.full-page-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Menu Content & Grid Layout */
+.menu-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 120px 7vw 40px;
+  /* offset top to avoid menu overlaps header */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Primary Menu Links */
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.menu-links li {
+  overflow: hidden;
+}
+
+.menu-links a {
+  display: inline-flex;
+  align-items: flex-baseline;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  transition: transform var(--transition-normal);
+}
+
+.link-num {
+  font-family: var(--font-sans);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-right: 1.5rem;
+  opacity: 0.6;
+  transform: translateY(-0.5rem);
+  transition: opacity var(--transition-normal), transform var(--transition-normal);
+}
+
+.link-text {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* Modern hover effect: line slides in from left, text translates right */
+.link-text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-normal);
+}
+
+.menu-links a:hover {
+  color: var(--color-primary);
+  transform: translateX(15px);
+}
+
+.menu-links a:hover .link-text::after {
+  transform: scaleX(1);
+}
+
+.menu-links a:hover .link-num {
+  opacity: 1;
+  transform: translateY(-0.5rem) scale(1.1);
+}
+
+/* Active Page Highlight Styles */
+.menu-links a.active {
+  color: var(--color-primary);
+  transform: translateX(15px);
+}
+
+.menu-links a.active .link-text::after {
+  transform: scaleX(1);
+}
+
+.menu-links a.active .link-num {
+  opacity: 1;
+  transform: translateY(-0.5rem) scale(1.1);
+}
+
+
+/* Entrance Stagger Animations for Links (CSS Transition Delays) */
+.menu-links li {
+  opacity: 0;
+}
+
+/* Menu Sidebar */
+.menu-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 2rem;
+  border-left: 1px solid var(--border-color);
+  opacity: 0;
+}
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+}
+
+.sidebar-link {
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 500;
+  width: fit-content;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.sidebar-link:hover {
+  color: var(--color-secondary);
+  transform: translateX(5px);
+}
+
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1.5rem;
+}
+
+/* Menu Footer */
+.menu-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  opacity: 0;
+}
+
+/* Responsive Menu Adaptation */
+@media (max-width: 991px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .menu-sidebar {
+    padding-left: 0;
+    border-left: none;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .social-links {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-container {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .topbar-container {
+    padding-left: 7vw;
+    padding-right: 7vw;
+  }
+
+  .menu-sidebar {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .menu-links {
+    gap: 1rem;
+  }
+
+  .menu-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1.5rem;
+  }
+}
