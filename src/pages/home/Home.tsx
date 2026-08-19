@@ -14,11 +14,9 @@ export const Home: React.FC = () => {
 
           Hello, I am Vishank. My work primarily focuses on the intersection
           of hardware and software, specifically ML Systems, RISC-V architecture,
-          Compilers, and GPU programming. I'll be posting about them here, and some of my
-          projects as well.
-          I hope you find something useful here, or at least
-          something interesting.
-          If you want to get in touch, you can contact me
+          Compilers, and GPU programming. This space serves as a log of my projects,
+          writings, and technical explorations.
+          {/* If you want to get in touch, you can contact me
           via <a href='mailto:vishanksinghh@gmail.com'>Mail</a> or&nbsp;
           <a
             href="https://discordapp.com/users/738448733615685652"
@@ -26,7 +24,7 @@ export const Home: React.FC = () => {
             rel="noopener noreferrer"
           >
             Discord
-          </a>
+          </a> */}
           {/* or&nbsp;
             <a
               href="https://github.com/VishankSingh"
@@ -34,9 +32,37 @@ export const Home: React.FC = () => {
               rel="noopener noreferrer"
             >
               GitHub
-            </a> */}&nbsp;(Mail preferrably).<br />
-          Currently, I am still a student pursuing a Bachelor's degree at the
-          Indian Institute of Technology, Hyderabad.
+            // </a> */}
+          {/* &nbsp;(Mail preferrably). */}
+          <br />
+
+
+          I'm currently completing my degree at IIT Hyderabad and am actively seeking
+          full-time roles starting in June 2027 within ML systems, AI compilers, and
+          hardware acceleration. Feel free to check out my&nbsp;
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            resume
+          </a>
+          , and if you'd like to
+          chat, the best way to reach me
+          is via &nbsp;
+          <a href='mailto:vishanksinghh@gmail.com'>Mail</a>
+          &nbsp;
+          (
+          <a
+            href="https://discordapp.com/users/738448733615685652"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Discord
+          </a>
+          &nbsp;
+          is open too).
+
           {/* Academically, my interests
           lie in distribution agnostic machine learning, function approximation,
           boolean analysis. */}
@@ -54,9 +80,7 @@ export const Home: React.FC = () => {
 
           <br />
           P.S.-
-          To justify my unemployability, I am
-          also interested in
-          philosophy.
+          When I'm not working, I'm usually reading philosophy (^=^).
 
           {/* <span
             style={{ fontStyle: 'italic', fontFamily: 'var(--font-display)' }}

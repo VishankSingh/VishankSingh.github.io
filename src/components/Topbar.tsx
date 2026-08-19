@@ -100,6 +100,7 @@ export const Topbar: React.FC = () => {
               aria-expanded={isMenuOpen}
               aria-controls="full-page-navigation"
               id="topbar-menu-btn"
+              data-cursor-padding="0"
             >
               <span ref={menuTextRef} className="menu-text">MENU</span>
             </button>
@@ -108,6 +109,7 @@ export const Topbar: React.FC = () => {
               onClick={toggleTheme}
               aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} theme`}
               id="topbar-theme-dot"
+              data-cursor-padding="0"
             >
               <span className="theme-dot"></span>
             </button>
@@ -124,7 +126,7 @@ export const Topbar: React.FC = () => {
         <div className="menu-container">
           <div className="menu-footer">
             <p className="copyright">© 2026 VISSSSS. ALL RIGHTS RESERVED.</p>
-            <p className="location">HYDERABAD, INDIA</p>
+            <p className="location">HYDERABAD, INDIA (+5:30 GMT)</p>
           </div>
         </div>
       </nav>

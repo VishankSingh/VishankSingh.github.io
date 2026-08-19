@@ -15,22 +15,18 @@
   width: 10px;
   height: 10px;
   background-color: #ffffff;
-  border-radius: 50%;
+  border-radius: 9999px;
   mix-blend-mode: exclusion;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1), transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
   pointer-events: none;
+  will-change: width, height, border-radius;
 }
 
 /* State: Visible when active */
 .custom-cursor.is-visible .custom-cursor-dot {
   opacity: 1;
-}
-
-/* State: Hovering interactive elements */
-.custom-cursor.is-hovered .custom-cursor-dot {
-  transform: translate(-50%, -50%) scale(2.5);
 }
 
 /* Hide on touch screens/mobile devices */

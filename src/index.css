@@ -397,6 +397,7 @@ section {
 
 /* Custom Cursor: Hide default cursor on desktop/mouse devices */
 @media (pointer: fine) {
+
   body,
   a,
   button,
