@@ -20,3 +20,32 @@
   color: var(--text-secondary);
   background-color: var(--bg-primary);
 }
+
+.tooltip-resume {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.tooltip-title {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+.tooltip-desc {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.tooltip-contact {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.tooltip-icon {
+  color: var(--color-primary, #64ffda);
+}

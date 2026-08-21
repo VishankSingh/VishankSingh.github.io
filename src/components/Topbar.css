@@ -239,7 +239,7 @@
 
 /* Entrance Stagger Animations for Links (CSS Transition Delays) */
 .menu-links li {
-  opacity: 0;
+  opacity: 1;
 }
 
 /* Menu Sidebar */
@@ -249,7 +249,7 @@
   gap: 3rem;
   padding-left: 2rem;
   border-left: 1px solid var(--border-color);
-  opacity: 0;
+  opacity: 1;
 }
 
 .sidebar-section {

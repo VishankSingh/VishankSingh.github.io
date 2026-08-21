@@ -46,38 +46,43 @@ export const Home: React.FC = () => {
             rel="noopener noreferrer"
           >
             resume
+            <div className="cursor-tooltip">
+              <div className="tooltip-resume">
+                <div className="tooltip-title">Resume.pdf</div>
+                <div className="tooltip-desc">Yet to be updated!</div>
+              </div>
+            </div>
           </a>
           , and if you'd like to
           chat, the best way to reach me
           is via &nbsp;
-          <a href='mailto:vishanksinghh@gmail.com'>Mail</a>
+          <a
+            href='mailto:vishanksinghh@gmail.com'
+          >
+            Mail
+            <div className="cursor-tooltip">
+              <div className="tooltip-contact">
+                <span className="tooltip-icon">✉</span> vishanksinghh@gmail.com
+              </div>
+            </div>
+          </a>
           &nbsp;
           (
           <a
             href="https://discordapp.com/users/738448733615685652"
             target="_blank"
             rel="noopener noreferrer"
+          // data-cursor-tooltip="Join Discord Server"
           >
             Discord
+            <div className="cursor-tooltip">
+              <div className="tooltip-contact">
+                <span className="tooltip-icon">☿</span> .vis.xyz
+              </div>
+            </div>
           </a>
           &nbsp;
           is open too).
-
-          {/* Academically, my interests
-          lie in distribution agnostic machine learning, function approximation,
-          boolean analysis. */}
-          {/* &nbsp; */}
-          {/* <span 
-              style={{ 
-                textDecoration: "underline 1px solid #d12f2f",
-                // textUnderlineOffset: "3px" 
-              }} 
-              data-cursor-text="This is quite nice field of research!"
-            >
-              Distribution agnostic Machine Learning
-            </span> */}
-
-
           <br />
           P.S.-
           When I'm not working, I'm usually reading philosophy (^=^).

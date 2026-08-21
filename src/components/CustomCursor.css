@@ -29,6 +29,46 @@
   opacity: 1;
 }
 
+/* Hide target element's local tooltip content from normal page flow (div-side source) */
+.cursor-tooltip {
+  display: none !important;
+}
+
+/* Custom Cursor Tooltip Wrapper (GSAP Positioned) */
+.custom-cursor-tooltip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  z-index: 100000;
+  will-change: transform;
+}
+
+/* Custom Cursor Tooltip Content Box (CSS Positioned & Styled) */
+.custom-cursor-tooltip-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(15, 15, 15, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-family: var(--font-sans), sans-serif;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  mix-blend-mode: normal;
+  /* Stay standard normal mix-blend-mode for legibility */
+  opacity: 0;
+  transform: translate(21px, -50%) scale(0.92);
+}
+
 /* Hide on touch screens/mobile devices */
 @media (pointer: coarse) {
   .custom-cursor {
